@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.cont {
+	position: relative;
+}
+img{
+	background-color: red;
+	padding: 0;
+	height: 200px;
+	width: 100%;
+}
+/* -- One -- */
+
+#one p{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	opacity: 0;
+	text-align: left;
+	bottom: 5px;
+	padding-left: 20px;
+	color: white;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+#one:hover p{
+	opacity: 1;
+}
+
+/* -- Two -- */
+
+#two{
+	
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+#two p{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	opacity: 0;
+	text-align: left;
+	bottom: 5px;
+	padding-left: 20px;
+	color: white;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+#two:hover{
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+#two:hover p{
+	opacity: 1;
+}
+
+/* -- Three -- */
+#threeOverlay{
+	position: absolute;
+	height: 200px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	opacity: 0;
+	text-align: left;
+	color: white;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+#three p{
+	font-family: 'Raleway', sans-serif;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: white;
+	top: 60%;
+	opacity: 0;
+	transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	-moz-transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	-webkit-transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+#three:hover p{
+	opacity: 1;
+	top: 30%;
+}
+#three:hover #threeOverlay{
+	opacity: 1;
+}
+
+
